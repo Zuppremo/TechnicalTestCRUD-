@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "9c04d24b-04fc-4be2-b1d3-461980e1f6e9",
+		"name": "TechicalTest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23259554"
+	},
+	"item": [
+		{
+			"name": "Get all persons",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "create a person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 23,\r\n    \"name\": \"Juan Montenegro\",\r\n    \"bornDate\": \"2001-03-29T05:00:00.000+00:00\",\r\n    \"country\": {\r\n        \"id\": 343,\r\n        \"name\": \"COLOMBIA\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personas/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create a person Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/personas/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"personas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
